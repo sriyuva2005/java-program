@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+       System.out.print("Input : ");
+        char ch = scanner.next().charAt(0);
+        if (Character.isLowerCase(ch)) {
+            System.out.println("Output : " + Character.toUpperCase(ch));
+        } else if (Character.isUpperCase(ch)) {
+            System.out.println("Output : " + Character.toLowerCase(ch));
+        } else {
+            //System.out.println("Output : Invalid input. Please enter an alphabet letter.");
+        }
+    }
+}
